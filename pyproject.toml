@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "labnote"
+version = "1.0.1"
+description = "LabNote is a polished local-first Markdown desktop editor built in Python."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "mistune>=3.0,<4.0",
+  "Pygments>=2.14,<3.0",
+  "reportlab>=4.0,<5.0",
+  "pypdf>=5.0,<6.0"
+]
+authors = [
+  {name = "LabNote Maintainers"}
+]
+license = {text = "MIT"}
+
+[project.scripts]
+labnote = "labnote.__main__:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+labnote = ["assets/*"]
