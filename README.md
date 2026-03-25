@@ -5,6 +5,12 @@
 它最早来自我们对 **MarkText 架构思路** 的一次 Python 重写实践，但现在它已经不再只是“重写版演示工程”。我们把品牌、界面、交互、表格工具、中文 PDF 导出、项目文档和测试整体等等打磨了一遍，让它更像一个愿意认真维护下去的独立项目。
 
 ---
+## 📦 下载
+
+已经打包好的 **Windows 和 macOS 版本** 可以在 Releases 页面下载：
+
+👉 https://github.com/jinpengaaaaa-ctrl/LabNote/releases
+---
 
 ## 项目定位
 
