@@ -31,7 +31,9 @@ class HighlightingHTMLRenderer(mistune.HTMLRenderer):
         self._formatter = HtmlFormatter(cssclass="codehilite", nowrap=False)
 
     def block_code(self, code: str, info: str | None = None) -> str:
-        language = (info or "").strip().split(maxsplit=1)[0]
+        #language = (info or "").strip().split(maxsplit=1)[0]
+        parts = (info or "").strip().split(maxsplit=1)
+        language = parts[0] if parts else ""
         lexer = TextLexer()
         if language:
             try:
